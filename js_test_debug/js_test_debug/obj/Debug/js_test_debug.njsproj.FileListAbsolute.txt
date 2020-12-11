@@ -1,0 +1,2 @@
+D:\Code\Code\js\js_test_debug\js_test_debug\obj\Debug\js_test_debug.njsproj.CoreCompileInputs.cache
+D:\Code\Code\js\js_test_debug\js_test_debug\bin\Microsoft.NodejsTools.WebRole.dll

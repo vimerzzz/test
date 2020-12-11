@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-web-app_test",
+  "version": "0.0.0",
+  "description": "NodejsWebApp_test",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}

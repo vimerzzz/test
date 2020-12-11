@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Java\\Web_app"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\test2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Web_app"
+	}
+}

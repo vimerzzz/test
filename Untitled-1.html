@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST</title>
+	<style>
+		body{
+			font-family: arial;
+		}
+		main{
+			font-size: 18px;
+		}
+		.box_header{
+			width: 100%;
+			background-color: transparent;
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 40px;
+			padding-bottom: 2px;
+			position: relative;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			z-index: 98;
+		}
+		.list_header{
+			display: inline;
+			width: 100%;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			margin: -4px;
+		}
+		.option_header{
+			text-decoration: none;
+			color: inherit;
+			padding: 10px 20px 10px 20px;
+		}
+		.option_header:hover{
+			width: 100%;
+			background-color: #cfcfcf;
+		}
+		.background_list_header{
+			background-color: #dedede;
+			box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 10px 6px #dedede;
+		}
+		.dropdown{
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown_content{
+			display: none;
+			position : absolute;
+			background-color: #dedede;
+			width: 300px;
+			box-shadow: 0px 8px 16px 0px #dedede;
+			z-index: 97;
+			text-align: center;
+			padding: inherit;
+			margin-top: 10px;
+		}
+		.dropdown_content a{
+			text-decoration: none;
+			color: inherit;
+			display: block;
+			padding: inherit;
+		}
+		.dropdown_content a:hover{
+			background-color: #cfcfcf;
+		}
+		.dropdown:hover .dropdown_content{
+			display: block;
+		}
+		#to_top{
+			position: fixed;
+			background-color: rgba(45, 45, 45, 0.1);
+			border-radius: 5px;
+			bottom: 3%;
+			left: 2%;
+			transform: scale(0.8);
+		}
+		#to_top:hover{
+			background-color: white;
+		}
+		#list_header{
+			font-size: 24px;
+			text-align: left;
+			font-weight: 600;
+			width: 100%;
+			margin: 0px;
+			padding: 10px;
+			border-radius: 10px;
+			margin-left: 150px;
+		}
+		
+		form{
+			text-transform: capitalize;
+			border-color: black;
+			border-width: 3px;
+			border-style: solid;
+			border-radius: 10px;
+			margin: 50px 100px 100px 180px;
+			padding: 50px 50px 50px 50px;
+			box-shadow: 15px 15px 10px 5px rgba(0, 0, 0, 0.23);
+		}
+		form h2{
+			text-transform: uppercase;
+			text-align: center;
+		}
+		input{
+			width: 90%;
+			padding: 12px 20px 5px 20px;
+			margin-top: -10px;
+			margin-bottom: 10px;
+			border: none;
+			border-bottom-color: black;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			font-size: 18px;
+			color: rgba(45, 45, 45, 0.6);
+		}
+		input:hover{
+			border-bottom-color: red;
+		}
+		hr{
+			width: 90%;
+		}
+		.red_color{
+			color: red;
+		}
+		.center_align{
+			text-align: center;
+		}
+		#register{
+			margin-top:	50px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			width: 50%;
+			border: none;
+		}
+	</style>
+	<div class="box_header" id="top_page">
+		<h1>trang quản lý và đào tạo</h1>
+		<div class="background_list_header">
+			<ul id="list_header">
+				<li class="list_header"><a class="option_header" href="#">Trang chủ</a></li>
+				<div class="dropdown">
+					<li class="list_header">
+						<a class="option_header" href="#">Sinh viên</a>
+						<div class="dropdown_content">
+							<a href="#">Thông tin</a>
+							<a href="#">Tra điểm</a>
+						</div>
+					</li>
+				</div>
+				<div class="dropdown">
+					<li class="list_header">
+						<a class="option_header" href="#">Giảng viên</a>
+						<div class="dropdown_content">
+							<a href="#">Thông tin</a>
+							<a href="#">Lập điểm</a>
+						</div>
+					</li>
+				</div>
+				<div class="dropdown">
+					<li class="list_header">
+						<a class="option_header" href="#">Admin</a>
+						<div class="dropdown_content">
+							<a href="#">Thông tin</a>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+</head>
+<main>
+	<form action="/">
+		<h2>Đăng ký thông tin cho sinh viên</h2><hr><br><br>
+		<strong class="red_color">*</strong>Họ và tên:<br><br>
+		<input type="text" placeholder="Nhập đầy đủ họ và tên" required><br><br>
+		<strong class="red_color">*</strong>Ngày tháng năm sinh:<br><br>
+		<input type="date" requỉed><br><br>
+		<div class="center_align">
+			<input id="register" type="submit" value="Đăng ký"><br><br>
+		</div>
+	</form>
+</main>
+<footer>
+	<a href="#top_page">
+        <button type="submit" id="to_top">Trở về đầu trang</button>
+	</a>
+</footer>
+</html>
